@@ -1,0 +1,10 @@
+server:
+  port: 8761
+#this is also a default port, even if you donot mention the application will run on 8761
+#hostname means where the application (service registry should be deploy)
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false
+    fetch-registry: false
